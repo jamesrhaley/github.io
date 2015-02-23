@@ -289,7 +289,7 @@ svg {
 }
 .btn-next:after
 {
-    background:url(../github.io/img/arrow.png) no-repeat 50% 50%;
+    background:url(../me/img/arrow.png) no-repeat 50% 50%;
     -webkit-background-size:50%;
     background-size:50%;
     opacity:.5
@@ -326,7 +326,7 @@ svg {
 }
 .btn-back:after
 {
-    background:url(../github.io/img/arrow-back.png) no-repeat 50% 50%;
+    background:url(../me/img/arrow-back.png) no-repeat 50% 50%;
     -webkit-background-size:50%;
     background-size:50%;
     opacity:.5
@@ -448,7 +448,7 @@ header .me{
 }
 .sankey .bg
 {
-    background:url(../github.io/img/sankey.png) no-repeat 50% 50%
+    background:url(../me/img/sankey.png) no-repeat 50% 50%
 }
 .finding-patterns a
 {
@@ -456,7 +456,7 @@ header .me{
 }
 .finding-patterns .bg
 {
-    background:url(../github.io/img/map-01.png) no-repeat 50% 50%
+    background:url(../me/img/map-01.png) no-repeat 50% 50%
 }
 .feet-in a
 {
@@ -465,7 +465,7 @@ header .me{
 }
 .feet-in .bg
 {
-    background:url(../github.io/img/bubbles-01.png) no-repeat 50% 50%
+    background:url(../me/img/bubbles-01.png) no-repeat 50% 50%
 }
 .git a
 {
@@ -473,7 +473,7 @@ header .me{
 }
 .git .bg
 {
-    background:url(../github.io/img/Github.png) no-repeat 50% 50%;
+    background:url(../me/img/Github.png) no-repeat 50% 50%;
 }
 .musician a
 {
@@ -481,7 +481,7 @@ header .me{
 }
 .musician .bg
 {
-    background:url(../github.io/img/sing.jpg) no-repeat 50% 50%
+    background:url(../me/img/sing.jpg) no-repeat 50% 50%
 }
 .facebook a
 {
@@ -489,7 +489,7 @@ header .me{
 }
 .facebook .bg
 {
-    background:url(../github.io/img/FB.png) no-repeat 50% 50%
+    background:url(../me/img/FB.png) no-repeat 50% 50%
 }
 
 .pallet-tile .bg
@@ -567,7 +567,7 @@ header .me{
 }
 .backtotop .bg
 {
-    background:url(../github.io/img/arrow-up.png) no-repeat 50% 50%;
+    background:url(../me/img/arrow-up.png) no-repeat 50% 50%;
     border-radius: 50%;
 }
 .ripple
@@ -1188,7 +1188,7 @@ header .me{
 
     .facebook .bg
     {
-        background-image:url(../github.io/img/FB.png)
+        background-image:url(../me/img/FB.png)
     }
 
 }
