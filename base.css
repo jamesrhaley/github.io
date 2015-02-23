@@ -1188,7 +1188,11 @@ header .me{
 
     .facebook .bg
     {
-        background-image:url(../me/img/FB.png)
+        background-image:url(../me/img/FB.png);
+    }
+    .git .bg
+    {
+        background-image:url(../me/img/Github.png);
     }
 
 }
