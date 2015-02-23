@@ -473,7 +473,7 @@ header .me{
 }
 .git .bg
 {
-    background:url(../me/img/Github.png) no-repeat 50% 50%;
+    background:url(../me/img/GitHub.png) no-repeat 50% 50%;
 }
 .musician a
 {
@@ -1192,7 +1192,7 @@ header .me{
     }
     .git .bg
     {
-        background-image:url(../me/img/Github.png);
+        background-image:url(../me/img/GitHub.png);
     }
 
 }
