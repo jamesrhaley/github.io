@@ -632,7 +632,7 @@ header .me{
     color:#575757;
     line-height:1.7em
 }
-.in-touch .hire a:before
+/*.in-touch .hire a:before
 {
     background-image:url(../images/find-a-job.png)
 }
@@ -643,7 +643,7 @@ header .me{
 .in-touch .life a:before
 {
     background-image:url(../images/life-at-google.png)
-}
+}*/
 .more-help-links
 {
     background:#eee
