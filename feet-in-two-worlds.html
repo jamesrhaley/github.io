@@ -8,9 +8,10 @@
     name="viewport">
 
     <title>
-      James Haley | d3!
+      James Haley | Pallet
     </title>
     <link href="base.css" rel="stylesheet">
+    <link href="css/featherlight.css" rel="stylesheet">
 
   </head>
   <body>
@@ -29,13 +30,14 @@
       "scrolldown" href="index.html"><span>Down</span></a>
       <div class="span-9" id="intro">
         <p>
-          There are solutions I have yet to find with code. For example in the visual below I filled the graphic with informative annotations. While the graph was created with <a href="http://d3js.org/">d3.js</a>, the annotations were created in Adobe Illustrator. This is great for print and static web, but it lacks the interactivity I am working toward. 
+          There are solutions I have yet to find with code. For example in the visual below I filled the graphic with informative annotations. While the graph was created with <a class="p-link" href="http://d3js.org/">d3.js</a>, the annotations were created in Adobe Illustrator. This is great for print and static web, but it lacks the interactivity I am working toward. 
         </p>
         <p> 
-          For the time being, annotating graphics using Adobe Illustrator is a great strategy and I look forward to the future. One goal of mine is to create a plugin to make annotations like the ones seen in the graphic below with code. If you wish to collaborate on a solution or already know of a good starting point, I would love to hear from you.  
+          For the time being, annotating graphics using Adobe Illustrator is a great strategy and I look forward to the future. One goal of mine is to create a javascript library to make annotations like ones seen in the graphic below. If you wish to collaborate on a solution or already know of a good starting point, I would love to hear from you.  
         </p>
         <p>
-          Click the image below to see the full graphic.
+          <a id="feet-in" class="p-link btn btn-default" href="img/bubbles-full-01.png" data-featherlight="image">Click</a>
+          the image below to see the full graphic.
         </p>
 
 
@@ -44,14 +46,24 @@
     <section class="resources section-wrapper" id="resources">
       <div class="row">
         <div class="pallet-tile-wrapper">  <!-- span-9 -->
-          <div class="pallet-tile feet-in">
-            <a class="link-effect" data-g-event="cta" data-g-label="tile-feet-in" href=
-            "img/bubbles.pdf" id="feet-in"><span class=
+          <div class="pallet-tile feet-in feet-in-bigger">
+            <a class="btn btn-default" href="img/bubbles-full-01.png" data-featherlight="image"><span class=
             "bg">&nbsp;</span> <span class="title">Feet in Two Worlds</span></a>
           </div>
+          <a class="p-link" href="img/bubbles.pdf" target="_blank">Open PDF in a new window.</a>
         </div>
-        
     </section>
+
+    <section class="round-button">
+        <div class="rounded-tile-wrapper smaller">
+          <div class="rounded-tile backtotop">
+            <a href="#header"><span class="bg" id="uparrow">&nbsp;</span>
+            <span class="title">Back to top</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="in-touch">
       <div class="row section-wrapper clearfix">
         <h2>
@@ -133,5 +145,7 @@
  -->
       </div>
     </footer>
+    <script src="js/jquery-1.7.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/featherlight.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

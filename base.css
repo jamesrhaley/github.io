@@ -1,5 +1,5 @@
-
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+/*
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);*/
     @media screen and (min-width:650px)
 {
 .row:after
@@ -226,6 +226,9 @@ svg {
 {
     padding:0 0 30px
 }
+.round-button {
+    padding:30px 0;
+}
 .section-wrapper
 {
     margin:0 auto;
@@ -394,11 +397,20 @@ header .me{
     float:none;
     width:100%
 }
+.p-link {
+    font-weight: 700;
+    color: #4C8EA2;
+}
+.p-link:hover {
+    font-weight: 700;
+    color: #6CAEC2;
+}
 .resources
 {
     margin:0 auto;
     padding-top:30px
 }
+
 .pallet-tile
 {
     -moz-transform:translate3d(0,0,0);
@@ -408,12 +420,12 @@ header .me{
     -webkit-transition:all .2s cubic-bezier(.4,0,.2,1);
     transition:all .2s cubic-bezier(.4,0,.2,1)
 }
-.pallet-tile-wrapper
-{
+.pallet-tile-wrapper {
     -moz-box-sizing:border-box;
     box-sizing:border-box;
     border:2px solid #fff
 }
+
 .pallet-tile>a
 {
     color:#fff;
@@ -442,6 +454,53 @@ header .me{
     -webkit-box-shadow:0 12px 15px 0 rgba(0,0,0,.24);
     box-shadow:0 12px 15px 0 rgba(0,0,0,.24)
 }
+.rounded-tile
+{
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    -moz-transform:translate3d(0,0,0);
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+    -moz-transition:all .2s cubic-bezier(.4,0,.2,1);
+    -webkit-transition:all .2s cubic-bezier(.4,0,.2,1);
+    transition:all .2s cubic-bezier(.4,0,.2,1)
+}
+.rounded-tile>a
+{
+    color:#fff;
+    display:block;
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+/*    left: 115%;
+    right: 115%;*/
+    -moz-transition:all .2s;
+    -webkit-transition:all .2s;
+    transition:all .2s;
+    -moz-transform:translate3d(0,0,0);
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0)
+}
+.rounded-tile:hover
+{
+
+    -moz-box-shadow:0 17px 50px 0 rgba(0,0,0,.19);
+    -webkit-box-shadow:0 17px 50px 0 rgba(0,0,0,.19);
+    box-shadow:0 17px 50px 0 rgba(0,0,0,.19);
+    position:relative;
+    z-index:100
+}
+.rounded-tile:hover a
+{
+    -moz-box-shadow:0 12px 15px 0 rgba(0,0,0,.24);
+    -webkit-box-shadow:0 12px 15px 0 rgba(0,0,0,.24);
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24)
+}
+
 .sankey a
 {
     background-color:#B0A6FA
@@ -458,6 +517,10 @@ header .me{
 {
     background:url(../me/img/map-01.png) no-repeat 50% 50%
 }
+.finding-patterns-big .bg
+{
+    background:url(../me/img/map-larger-01.png) no-repeat 50% 50%
+}
 .feet-in a
 {
     background-color: rgba(38,151,153,.62);/*//#269799;*/
@@ -466,6 +529,9 @@ header .me{
 .feet-in .bg
 {
     background:url(../me/img/bubbles-01.png) no-repeat 50% 50%
+}
+.feet-in-bigger .bg {
+    background:url(../me/img/bubbles-bigger-01.png) no-repeat 50% 50%
 }
 .git a
 {
@@ -477,7 +543,7 @@ header .me{
 }
 .musician a
 {
-    background-color:#36C3FF
+    background-color:#9a9aaa
 }
 .musician .bg
 {
@@ -493,6 +559,20 @@ header .me{
 }
 
 .pallet-tile .bg
+{
+    -webkit-background-size:100%;
+    background-size:100%;
+    display:block;
+    height:100%;
+    position:absolute;
+    -moz-transition:-moz-transform .2s cubic-bezier(.4,0,.2,1);
+    -webkit-transition:-webkit-transform .2s cubic-bezier(.4,0,.2,1);
+    transition:transform .2s cubic-bezier(.4,0,.2,1);
+    width:100%;
+    z-index:1
+}
+/*this has to do with the arrow*/
+.rounded-tile .bg
 {
     -webkit-background-size:100%;
     background-size:100%;
@@ -545,6 +625,13 @@ header .me{
     position:absolute;
     right:0;
     text-align:left;
+    z-index:10
+}
+
+
+
+.rounded-tile .title{
+    position:absolute;
     z-index:10
 }
 .pdf-title
@@ -869,7 +956,15 @@ header .me{
         float:left;
         width:50%
     }
-    .pallet-tile-wrapper.span-6 .bg {
+    .rounded-tile-wrapper { /*here is where it needs to change*/
+        margin: 0 auto;
+        width:30%;
+    }
+    .smaller {
+        width:20%;
+
+    }
+    .pallet-tile-wrapper.span-6 .bg { 
         -webkit-background-size:200%;
         background-size:200%
     }
@@ -890,8 +985,19 @@ header .me{
     .pallet-tile .title {
         font-size:1.2em
     }
+
+    .rounded-tile a {
+        padding-bottom:100%
+    }
+    .rounded-tile .cover {
+        margin:0;
+        width:100%;
+        -webkit-background-size:cover;
+        background-size:cover
+    }
+
     .backtotop {
-        display:block
+        display:block;
     }
     .backtotop .title {
         visibility:hidden
@@ -1067,6 +1173,10 @@ header .me{
 {
     padding-bottom:100%
 }
+.span-3 .rounded-tile>a
+{
+    padding-bottom:100%
+}
 .musician .bg
 {
     -webkit-background-size:cover;
@@ -1209,11 +1319,7 @@ header .me{
     background-size:40%;
 
 }
-#backtotop {
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    border-radius:50%;
-}
+
 #uparrow{
     -webkit-background-size:30%;
     background-size:30%;
@@ -1221,5 +1327,9 @@ header .me{
 }
 .page-text{
     color: #000
+}
+.contact{
+    padding-top: 0px;
+    margin-top: 0px;
 }
 

@@ -8,9 +8,10 @@
     name="viewport">
 
     <title>
-      James Haley | d3!
+      James Haley | Pallet
     </title>
     <link href="base.css" rel="stylesheet">
+    <link href="css/featherlight.css" rel="stylesheet">
 
   </head>
   <body>
@@ -35,7 +36,8 @@
           This is a graphic showing how many factors in a school system lead to a particular outcome. The author originally  created a table, but the linear nature of that table obscured the fact that the idea was not linear.
         </p>  
         <p>
-          Click the image below to see the full version.
+          <a class="p-link btn btn-default" href="img/map-full.png" data-featherlight="image">Click</a>
+          the image below to see the full version.
         </p>
 
       </div>
@@ -43,14 +45,24 @@
     <section class="resources section-wrapper" id="resources">
       <div class="row">
         <div class="pallet-tile-wrapper">  <!-- span-9 -->
-          <div class="pallet-tile finding-patterns">
-            <a class="link-effect" data-g-event="cta" data-g-label="tile-finding-patterns" href=
-            "img/patterns.pdf" id="finding-patterns"><span class=
+          <div class="pallet-tile finding-patterns finding-patterns-big">
+            <a class="btn btn-default" href="img/map-full.png" data-featherlight="image"><span class=
             "bg">&nbsp;</span> <span class="title">Finding Patterns</span></a>
           </div>
+        <a class="p-link" href="img/patterns.pdf" target="_blank">Open PDF in a new window.</a>
         </div>
-        
     </section>
+
+    <section class="round-button">
+        <div class="rounded-tile-wrapper smaller">
+          <div class="rounded-tile backtotop">
+            <a href="#header"><span class="bg" id="uparrow">&nbsp;</span>
+            <span class="title">Back to top</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="in-touch">
       <div class="row section-wrapper clearfix">
         <h2>
@@ -132,5 +144,7 @@
 -->
       </div>
     </footer>
+    <script src="js/jquery-1.7.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/featherlight.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

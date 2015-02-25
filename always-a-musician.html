@@ -8,9 +8,10 @@
     name="viewport">
 
     <title>
-      James Haley | d3!
+      James Haley | Pallet
     </title>
     <link href="base.css" rel="stylesheet">
+    <link href="src/css/swipebox.min.css" rel="stylesheet">
 
   </head>
   <body>
@@ -29,7 +30,10 @@
       "scrolldown" href="index.html"><span>Down</span></a>
       <div class="span-9" id="intro">
         <p>
-          My background is music. Even when I am coding, I pick up my guitar every day. Feel free to check out some of my work and click the image below.
+          My background is music. Even when I am coding, I pick up my guitar every day. 
+        </p>
+        <p>
+          <a class="sb-video p-link" href="#">Click</a> the image below and check out some of my work.
         </p>
 
       </div>
@@ -38,16 +42,30 @@
       <div class="row">
         <div class="pallet-tile-wrapper">  <!-- span-9 -->
           <div class="pallet-tile musician">
-            <a class="link-effect musician" data-g-event="cta" data-g-label="tile-musician" href=
-            "https://www.youtube.com/watch?v=xQqzhjstb7E" id="musician"><span class=
+            <a class="sb-video musician"  href=
+            "#" id="musician"><span class=
             "bg">&nbsp;</span> <span class="title">Always a Musician</span></a>
           </div>
+          <a class="p-link" href="https://www.youtube.com/watch?v=xQqzhjstb7E" target="_blank">Open YouTube in a new window.</a>
         </div>
         
     </section>
+
+
+
+    <section class="round-button">
+        <div class="rounded-tile-wrapper smaller">
+          <div class="rounded-tile backtotop">
+            <a href="#header"><span class="bg" id="uparrow">&nbsp;</span>
+            <span class="title">Back to top</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="in-touch">
       <div class="row section-wrapper clearfix">
-        <h2>
+        <h2 class="contact">
           Contact Me
         </h2>
         <div class="span-3 hire clearfix">
@@ -126,5 +144,22 @@
 -->
       </div>
     </footer>
+    <script src="lib/ios-orientationchange-fix.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="src/js/jquery.swipebox.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+  
+        $( '.sb-video' ).click( function( e ) {
+        e.preventDefault();
+        $.swipebox( [
+          { href : "https://www.youtube.com/watch?v=xQqzhjstb7E", title : 'Land of the Free' },
+          { href : "https:www.youtube.com/watch?v=iP6hzAagXqY", title : 'Renting American Dreams' },
+          { href : "https://www.youtube.com/watch?v=wPmtwr9PASY", title : 'Not the Man You Thought I Am' }
+        ] );
+      } );
+    });
+    </script>
+
   </body>
 </html>
