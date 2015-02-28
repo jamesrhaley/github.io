@@ -200,12 +200,17 @@
     font-style:italic;
     font-weight:800;
     font-size: 2em;
+
 }
 #last-n {
     font-family: 'Bodoni MT', Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
     font-weight:500;
     font-size: 2.2em;
     color: #013642;
+    
+}
+.title-name{
+    z-index: 202;
 }
 .me {
     max-width:250px;
@@ -255,7 +260,8 @@ svg {
     -moz-transition:all .28s cubic-bezier(.4,0,.2,1);
     -webkit-transition:all .28s cubic-bezier(.4,0,.2,1);
     transition:all .28s cubic-bezier(.4,0,.2,1);
-    width:50px
+    width:50px;
+    z-index:202;
 }
 .paper-button:before
 {
@@ -346,8 +352,9 @@ svg {
     height:0;
     overflow:hidden
 }
-    header
-{
+
+    
+header {
     background-color:#6CAEC2;
 }
 header .section-wrapper {
@@ -379,6 +386,16 @@ header .me{
     position:absolute;
     text-align:right;
     width:250px;
+    z-index: 202;
+}
+.place_holder{
+    z-index: 201;
+    position: fixed;
+    height:25px;
+    width:100%;
+    top: 0;
+    left: 0;
+    background-color:#6CAEC2;
 }
 .intro
 {
@@ -890,7 +907,6 @@ header .me{
     }
     .me {
         max-width:165px;
-
     }
 
     .pallet-tile .title {
@@ -908,6 +924,26 @@ header .me{
     .paper-button:before,.paper-button:after {
         height:40px;
         width:40px
+    }
+    .rounded-tile-wrapper { /*here is where it needs to change*/
+        margin: 0 auto;
+        width:15%;
+    }
+    .rounded-tile a {
+        padding-bottom:100%
+    }
+    .rounded-tile .cover {
+        margin:0;
+        width:100%;
+        -webkit-background-size:cover;
+        background-size:cover
+    }
+
+    .backtotop {
+        display:block;
+    }
+    .backtotop .title {
+        visibility:hidden
     }
     .in-touch h2 {
         text-align:center
@@ -956,10 +992,6 @@ header .me{
         float:left;
         width:50%
     }
-    .rounded-tile-wrapper { /*here is where it needs to change*/
-        margin: 0 auto;
-        width:30%;
-    }
     .smaller {
         width:20%;
 
@@ -986,22 +1018,10 @@ header .me{
         font-size:1.2em
     }
 
-    .rounded-tile a {
-        padding-bottom:100%
-    }
-    .rounded-tile .cover {
-        margin:0;
-        width:100%;
-        -webkit-background-size:cover;
-        background-size:cover
+    .rounded-tile-wrapper { /*here is where it needs to change*/
+        width:25%;
     }
 
-    .backtotop {
-        display:block;
-    }
-    .backtotop .title {
-        visibility:hidden
-    }
     .in-touch a {
         font-size:1.2em;
         line-height:1.5em;
@@ -1039,6 +1059,9 @@ header .me{
     }
     .me {
         max-width:100px;
+    }
+    .rounded-tile-wrapper { /*here is where it needs to change*/
+        width:30%;
     }
     .in-touch p {
         display:none

@@ -14,6 +14,7 @@
 
   </head>
   <body>
+    <!-- header -->
     <header id="header">
       <div class="section-wrapper">
         <h1 itemprop="name">
@@ -21,11 +22,12 @@
         </h1>
         <img class="me" src="img/me.png">
       </div>
-      
-  
     </header>
+
+    <!-- menu button -->
     <section class="intro section-wrapper">
-      <a class="paper-button btn-next" data-g-event="nav" href="#resources"><span>Down</span></a>
+      <a class="paper-button btn-next" id="down-arrow" data-scroll data-options='{ "easing": "easeOutQuint" }' 
+      href="#resources"><span>Down</span></a>
       <div class="span-9" id="intro">
         <p>
           I enjoy solving problems. Whether writing a few thousand lines of code to illuminate and give dimension to dense data, or working on my favorite guitar, I like to take things apart and put them back together better than they were before.
@@ -83,13 +85,14 @@
     <section class="round-button">
         <div class="rounded-tile-wrapper">
           <div class="rounded-tile backtotop">
-            <a href="#header"><span class="bg" id="uparrow">&nbsp;</span>
+            <a href="#header" data-scroll data-options='{ "easing": "easeOutQuint" }' ><span class="bg" id="uparrow">&nbsp;</span>
             <span class="title">Back to top</span></a>
           </div>
         </div>
       </div>
     </section>
-    
+
+    <!-- contact -->
     <section class="in-touch">
       <div class="row section-wrapper clearfix">
         <h2>
@@ -118,6 +121,8 @@
         </div>
       </div>
     </section>
+
+    <!-- help links -->
     <section class="more-help-links">
       <div class="row section-wrapper">
         <div class="span-9">
@@ -162,6 +167,19 @@
       </div>
     </footer>
     <script src="js/jquery-1.7.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src='dist/js/smooth-scroll.js'></script>
     <script src="js/featherlight.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+
+    smoothScroll.init({
+      speed: 500,
+      easing: 'easeOutCubic',
+      offset: 0,
+      updateURL: true,
+      callbackBefore: function ( toggle, anchor ) {},
+      callbackAfter: function ( toggle, anchor ) {}
+    });
+
+    </script>
   </body>
 </html>

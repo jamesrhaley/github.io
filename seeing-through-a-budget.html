@@ -56,7 +56,7 @@
     <section class="round-button">
         <div class="rounded-tile-wrapper smaller">
           <div class="rounded-tile backtotop">
-            <a href="#header"><span class="bg" id="uparrow">&nbsp;</span>
+            <a href="#header" data-scroll data-options='{ "easing": "easeOutQuint" }' ><span class="bg" id="uparrow">&nbsp;</span>
             <span class="title">Back to top</span></a>
           </div>
         </div>
@@ -144,6 +144,19 @@
       </div>
     </footer>
     <script src="js/jquery-1.7.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src='dist/js/smooth-scroll.js'></script>
     <script src="js/featherlight.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+
+    smoothScroll.init({
+      speed: 500,
+      easing: 'easeOutCubic',
+      offset: 0,
+      updateURL: true,
+      callbackBefore: function ( toggle, anchor ) {},
+      callbackAfter: function ( toggle, anchor ) {}
+    });
+
+    </script>
   </body>
 </html>
