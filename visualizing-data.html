@@ -30,28 +30,55 @@
       "scrolldown" href="index.html"><span>Down</span></a>
       <div class="span-9" id="intro">
         <p>
-          There are solutions I have yet to find with code. For example in the visual below I filled the graphic with informative annotations. While the graph was created with <a class="p-link" href="http://d3js.org/">d3.js</a>, the annotations were created in Adobe Illustrator. This is great for print and static web, but it lacks the interactivity I am working toward. 
-        </p>
-        <p> 
-          For the time being, annotating graphics using Adobe Illustrator is a great strategy and I look forward to the future. One goal of mine is to create a javascript library to make annotations like ones seen in the graphic below. If you wish to collaborate on a solution or already know of a good starting point, I would love to hear from you.  
-        </p>
-        <p>
-          <a id="feet-in" class="p-link btn btn-default" href="img/bubbles-full-01.png" data-featherlight="image">Click</a>
-          the image below to see the full graphic.
+          Since I have a passion for helping researchers present their work to wider audiences, I have focused on becoming an expert in D3 and data visualization. Believing manipulation of data was as important if not more so, I created a platform that relies on push based design and stateless elements.  This allows me to add or take away features at will.  My favorite example of this is in the GWAS Catalog below.  Notice the smooth staggering of transitions as you add or take away elements from the visualization.  Even if you change the animation speed mid transition the app does not break.
         </p>
 
+        <p>
+          Click the images below for samples of my work.
+        </p>
 
       </div>
     </section>
     <section class="resources section-wrapper" id="resources">
       <div class="row">
-        <div class="pallet-tile-wrapper">  <!-- span-9 -->
-          <div class="pallet-tile feet-in feet-in-bigger">
-            <a class="btn btn-default" href="img/bubbles-full-01.png" data-featherlight="image"><span class=
-            "bg">&nbsp;</span> <span class="title">Feet in Two Worlds</span></a>
+        <div class="pallet-tile-wrapper span-3">  <!-- span-9 -->
+          <div class="pallet-tile gwas">
+            <a class="link-effect" data-g-event="cta" 
+            href="https://jamesrhaley.github.io/GWAS/" id="gwas">
+            <span class="bg">&nbsp;</span> <span class="title-blackend">GWAS Catalog</span></a>
           </div>
-          <a class="p-link" href="img/bubbles.pdf" target="_blank">Open PDF in a new window.</a>
+          <a class="p-link" href="https://jamesrhaley.github.io/GWAS/" target="_blank">Open visualization in a new window.</a>
         </div>
+
+        <div class="pallet-tile-wrapper span-3">  <!-- span-9 -->
+          <div class="pallet-tile college">
+            <a class="link-effect" data-g-event="cta" 
+            href="https://jamesrhaley.github.io/College-to-Career/" id="college">
+            <span class="bg">&nbsp;</span> <span class="title-blackend">College to Career</span></a>
+          </div>
+          <a class="p-link" href="https://jamesrhaley.github.io/College-to-Career/" target="_blank">Open visualization in a new window.</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="pallet-tile-wrapper span-3">  <!-- span-9 -->
+          <div class="pallet-tile gwas-first">
+            <a class="link-effect" data-g-event="cta" 
+            href="http://jamesrhaley.github.io/SNPS/" id="gwas-first">
+            <span class="bg">&nbsp;</span> <span class="title-blackend">GWAS Catalog (first iteration)</span></a>
+          </div>
+          <a class="p-link" href="http://jamesrhaley.github.io/SNPS/" target="_blank">Open visualization in a new window.</a>
+        </div>
+
+        <div class="pallet-tile-wrapper span-3">  <!-- span-9 -->
+          <div class="pallet-tile sankey-white">
+            <a class="link-effect" data-g-event="cta" 
+            href="http://code-island.org/RI-Budget-Sankey/" id="sankey-white">
+            <span class="bg">&nbsp;</span> <span class="title-blackend">Rhode Island State</span></a>
+          </div>
+          <a class="p-link" href="http://code-island.org/RI-Budget-Sankey/" target="_blank">Open visualization in a new window.</a>
+        </div>
+      </div>
     </section>
 
     <section class="round-button">
@@ -141,8 +168,7 @@
     </section>
     <footer>
       <div class="section-wrapper">
-<!--         <div class="logo">
- -->
+
       </div>
     </footer>
     <script src="js/jquery-1.7.0.min.js" type="text/javascript" charset="utf-8"></script>

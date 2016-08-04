@@ -518,14 +518,61 @@ header .me{
     box-shadow:0 12px 15px 0 rgba(0,0,0,.24)
 }
 
+/*********************** image links *******************************/
 .sankey a
 {
     background-color:#B0A6FA
 }
 .sankey .bg
 {
-    background:url(../me/img/sankey.png) no-repeat 50% 50%
+    background:url(./img/sankey.png) no-repeat 50% 50%
 }
+
+.sankey-white a
+{
+    background-color:#fff;
+}
+.sankey-white .bg
+{
+    background:url(./img/sankey-white.png) no-repeat 50% 50%
+}
+
+.gwas a
+{
+    background-color:#fff;
+}
+.gwas .bg
+{
+    background:url(./img/gwas.png) no-repeat 50% 50%
+}
+
+.gwas-first a
+{
+    background-color:#fff;
+}
+.gwas-first .bg
+{
+    background:url(./img/gwas-first.png) no-repeat 50% 50%
+}
+
+.web-design a
+{
+    background-color:#000;
+}
+.web-design .bg
+{
+    background:url(./img/web-design.png) no-repeat 50% 50%
+}
+
+.college a
+{
+    background-color:#fff;
+}
+.college .bg
+{
+    background:url(./img/college.png) no-repeat 50% 50%
+}
+
 .finding-patterns a
 {
     background-color:#92CC86
@@ -632,6 +679,24 @@ header .me{
     text-shadow: -1px 1px 1px #111;
     bottom:1em;
     color:#fff;
+    display:block;
+    font-size:1.329em;
+    font-weight:400;
+    left:0;
+    line-height:1.3em;
+    margin:0 auto;
+    padding:0 1.5em;
+    position:absolute;
+    right:0;
+    text-align:left;
+    z-index:10
+}
+
+.pallet-tile .title-blackend {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-shadow: -1px 1px 1px #bbb;
+    bottom:1em;
+    color:#222;
     display:block;
     font-size:1.329em;
     font-weight:400;
@@ -1155,6 +1220,11 @@ header .me{
         background-size:160%;
         background-position:50% 20%
     }
+    .pallet-tile-wrapper .gwas .bg {
+        -webkit-background-size:160%;
+        background-size:160%;
+        background-position:50% 20%
+    }
     .finding-patterns .bg {
         -webkit-background-size:80%;
         background-size:80%;
@@ -1356,3 +1426,6 @@ header .me{
     margin-top: 0px;
 }
 
+title-black {
+    color: #222;
+}

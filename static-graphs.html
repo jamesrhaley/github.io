@@ -11,7 +11,7 @@
       James Haley | Pallet
     </title>
     <link href="base.css" rel="stylesheet">
-    <link href="css/featherlight.css" rel="stylesheet">
+    <link href="src/css/swipebox.css" rel="stylesheet">
 
   </head>
   <body>
@@ -29,26 +29,22 @@
       "scrolldown" href="index.html"><span>Down</span></a>
       <div class="span-9" id="intro">
         <p>
-          Making a complicated idea clear is about one of the hardest things to accomplish. Still to this day, the best visual for that goal is text with great typography to compliment it. But to draw in a larger audience you need a great visual. Not only does a visual add futher evidence to your reasoning, more people just naturally pay attention.
-        </p>
-        <p>
-          This is a graphic showing how many factors in a school system lead to a particular outcome. The author originally  created a table, but the linear nature of that table obscured the fact that the idea was not linear.
+          Researcher still need to publish, still need handouts, and still need to present their findings at conferences.  For that reason I find static graphs and presentation materials are just as important as web based integrative graphics.  I have primarily done work on creating easier ways to make these graphics with ggplot in R but also incorporate d3 and Adobe products.
         </p>  
         <p>
-          <a class="p-link btn btn-default" href="img/map-full.png" data-featherlight="image">Click</a>
-          the image below to see the full version.
+          <a class='openme' class="p-link btn btn-default" href="img/map-full.png" data-featherlight="image">Click</a>
+          to see a sample of my static graphs.
         </p>
 
       </div>
     </section>
     <section class="resources section-wrapper" id="resources">
       <div class="row">
-        <div class="pallet-tile-wrapper">  <!-- span-9 -->
+        <div class="openme pallet-tile-wrapper">  <!-- span-9 -->
           <div class="pallet-tile finding-patterns finding-patterns-big">
             <a class="btn btn-default" href="img/map-full.png" data-featherlight="image"><span class=
             "bg">&nbsp;</span> <span class="title">Finding Patterns</span></a>
           </div>
-        <a class="p-link" href="img/patterns.pdf" target="_blank">Open PDF in a new window.</a>
         </div>
     </section>
 
@@ -145,7 +141,7 @@
     </footer>
     <script src="js/jquery-1.7.0.min.js" type="text/javascript" charset="utf-8"></script>
     <script src='dist/js/smooth-scroll.js'></script>
-    <script src="js/featherlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="src/js/jquery.swipeboxMINE.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
 
     smoothScroll.init({
@@ -158,13 +154,18 @@
     });
 
 
-    // $(window).scroll(function(){
-    // $("#theFixed").css("top",Math.max(15,250-$(this).scrollTop()));
-    // });
-    $(window).scroll( function () {
-      yCord = $(window).scrollTop();
-      console.log(yCord) 
-    })
+    $( document ).ready(function() {
+  
+        $( '.openme' ).click( function( e ) {
+        e.preventDefault();
+        $.swipebox([
+            { href : "img/bubbles-full-01.png", title : 'Bubbles' },
+            { href : "img/map-full.png", title : 'Map' },
+            { href : "img/coffee-hour.png", title : 'Coffe Hour' }
+        ]);
+      });
+    });
+
     </script>
   </body>
 </html>

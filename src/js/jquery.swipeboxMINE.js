@@ -73,7 +73,6 @@
 
 				$( document ).on( 'click', selector, function( event ) {
 
-					 console.log( event );
 
 					if ( event.target.parentNode.className === 'slide current' ) {
 
@@ -341,7 +340,7 @@
 
 								// first slide
 								if ( 0 === index ) {
-									// console.log( 'first' );
+									
 									$( '#swipebox-overlay' ).addClass( 'leftSpringTouch' );
 								} else {
 									// Follow gesture
@@ -750,6 +749,7 @@
 									plugin.settings.autoplayVideos,
 									'" frameborder="0" allowfullscreen></iframe>'
 								].join("");
+					console.log("iframe",iframe)
 
 				} else if ( vimeoUrl ) {
 
@@ -814,7 +814,8 @@
 						$this.preloadMedia( index );
 						$this.setSlide( index );
 						$this.preloadMedia( index + 1 );
-					} else {
+					} 
+					else {
 						$( '#swipebox-overlay' ).addClass( 'rightSpring' );
 						setTimeout( function() {
 							$( '#swipebox-overlay' ).removeClass( 'rightSpring' );
@@ -828,19 +829,21 @@
 			 */
 			getPrev : function () {
 				var index = $( '#swipebox-slider .slide' ).index( $( '#swipebox-slider .slide.current' ) ),
-					src;
+					src; // gets the number of the last item
 				if ( index > 0 ) {
-					src = $( '#swipebox-slider .slide' ).eq( index ).contents().find( 'iframe').attr( 'src' );
+					src = $( '#swipebox-slider .slide' ).eq( index ).contents().find( 'iframe').attr( 'src' ); //
+					//console.log("src", src)
 					$( '#swipebox-slider .slide' ).eq( index ).contents().find( 'iframe' ).attr( 'src', src );
 					index--;
 					this.setSlide( index );
 					this.preloadMedia( index-1 );
-				} else {
-					$( '#swipebox-overlay' ).addClass( 'leftSpring' );
-					setTimeout( function() {
-						$( '#swipebox-overlay' ).removeClass( 'leftSpring' );
-					}, 500 );
-				}
+				} 
+				// else {
+				// 	$( '#swipebox-overlay' ).addClass( 'leftSpring' );
+				// 	setTimeout( function() {
+				// 		$( '#swipebox-overlay' ).removeClass( 'leftSpring' );
+				// 	}, 500 );
+				// }
 			},
 
 			/**
@@ -861,7 +864,7 @@
 				$( 'body' ).unbind( 'touchstart' );
 				$( 'body' ).unbind( 'touchmove' );
 				$( 'body' ).unbind( 'touchend' );
-				$( '#swipebox-slider' ).unbind();
+				$( '#swipebox-slider' ).unbind( 'mousemove' );
 				$( '#swipebox-overlay' ).remove();
 
 				if ( ! $.isArray( elem ) ) {
